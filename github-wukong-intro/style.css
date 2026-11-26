@@ -1848,3 +1848,10 @@ a {
 body:hover .cursor-trail {
     opacity: 0.4;
 }
+
+/* Odd card count: last card spans the full row instead of leaving a gap */
+@media (min-width: 769px) {
+    .project-grid > .project-card-sm:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+}
