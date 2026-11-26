@@ -38,7 +38,11 @@
         </a>
         <a href="#research" class="nav-node" data-label="藏經閣" data-section="research">
             <span class="node-dot"></span>
-            <span class="node-label">研究以及專案</span>
+            <span class="node-label">研究發表</span>
+        </a>
+        <a href="#projects" class="nav-node" data-label="煉丹爐" data-section="projects">
+            <span class="node-dot"></span>
+            <span class="node-label">專案作品</span>
         </a>
         <a href="#experience" class="nav-node" data-label="兜率宮" data-section="experience">
             <span class="node-dot"></span>
@@ -131,7 +135,7 @@
                         </svg>
                     </div>
                     <h3>自我介紹</h3>
-                    <p>嗨，我是 <strong>Jay (鄧杰修)</strong>，國立臺灣大學生物機電工程學系的學生。我的學術興趣聚焦於<strong>機器學習</strong>與<strong>電腦視覺</strong>，致力於將 AI 技術應用於農業與林業領域。</p>
+                    <p>嗨，我是 <strong>Jay (鄧杰修)</strong>，國立臺灣大學生物機電工程學系碩士班學生。我的學術興趣聚焦於<strong>機器學習</strong>與<strong>電腦視覺</strong>，致力於將 AI 技術應用於農業與林業領域。</p>
                 </div>
 
                 <div class="about-card about-passion">
@@ -142,7 +146,7 @@
                         </svg>
                     </div>
                     <h3>課外活動</h3>
-                    <p>除了學術研究，我也積極參與課外活動。曾擔任 NTUPM 流行音樂社營隊活動長、系學會杜鵑花節主席等多項領導職務，培養了紮實的<strong>領導力</strong>與<strong>溝通能力</strong>。</p>
+                    <p>擔任過生機系<strong>畢業典禮</strong>（2025）、<strong>杜鵑花節</strong>（2024，負責規劃、預算與團隊執行）、<strong>新生營</strong>（2023）三屆總召；在臺大流行音樂社（NTUPM）擔任社課講師與活動長，並帶領第十屆音樂營 60 人的活動團隊。</p>
                 </div>
 
                 <div class="about-card about-mission">
@@ -154,7 +158,7 @@
                         </svg>
                     </div>
                     <h3>學術研究</h3>
-                    <p>我相信技術結合與專業知識能產生巨大的影響力。目前於 NTU <strong>機器學習與電腦視覺實驗室</strong>擔任研究助理，持續在 Foundation Model 與農林應用的交叉領域深耕。</p>
+                    <p>現為臺大生機所碩士生，在<strong>機器學習與電腦視覺實驗室</strong>做研究，並擔任<strong>農業部</strong>作物辨識計畫的研究助理，持續在 Foundation Model 與農林應用的交叉領域深耕。</p>
                 </div>
             </div>
 
@@ -167,9 +171,9 @@
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
-                    <span class="stat-number" data-target="2">0</span>
+                    <span class="stat-number" data-target="3">0</span>
                     <span class="stat-suffix"></span>
-                    <span class="stat-label">Research Papers</span>
+                    <span class="stat-label">Publications</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
@@ -400,7 +404,7 @@
                 <!-- Paper 1: Crop Identification -->
                 <article class="research-card featured" id="paper-1">
                     <div class="project-ember"></div>
-                    <div class="research-badge">📄 Research Paper · In Progress</div>
+                    <div class="research-badge">📄 CIGR 2026 · Conference Paper</div>
                     <div class="research-header">
                         <div class="research-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -409,34 +413,35 @@
                         </div>
                     </div>
                     <h3 class="research-title">Foundation Model-Based Anomalies Removal Approach Toward Crop Identification</h3>
-                    <p class="research-authors">Chieh-Hsiu Teng, Yan-Fu Kuo · NTU Toolmen Lab (ML & Machine Vision)</p>
-                    <p class="research-desc">延伸已發表的異常偵測策略，提出以 Foundation Model（如 SAM — Segment Anything Model）為核心的創新方法，用於主動移除農田影像中的異常資料（模糊影像、非目標物體、環境干擾等 OOD 資料），從而大幅提升作物種類辨識與生長階段判定的準確性。此研究結合大規模預訓練模型的泛化能力與智慧農業的實地需求。</p>
+                    <p class="research-authors"><strong>Chieh-Hsiu Teng</strong>, Yan-Fu Kuo · CIGR 2026 (International Commission of Agricultural Engineering)</p>
+                    <p class="research-desc">農業部計畫。延伸已發表的異常偵測策略，建立不需額外標註的零樣本（zero-shot）處理流程：先以 CLIP 篩掉與作物無關的影像，再用 Lang-SAM 以文字提示切出田區，最後交給 ViT 辨識作物，讓模型能直接面對真實田間拍攝的雜亂影像。</p>
                     <div class="research-meta">
-                        <span class="research-tag highlight">Foundation Model (SAM)</span>
-                        <span class="research-tag">Anomaly Removal</span>
-                        <span class="research-tag">Crop Classification</span>
-                        <span class="research-tag">OOD Detection</span>
-                        <span class="research-tag">Smart Agriculture</span>
+                        <span class="research-tag highlight">Foundation Model</span>
+                        <span class="research-tag">CLIP</span>
+                        <span class="research-tag">Lang-SAM</span>
+                        <span class="research-tag">ViT</span>
+                        <span class="research-tag">Zero-shot</span>
+                        <span class="research-tag">Crop Identification</span>
                     </div>
                     <div class="research-pipeline">
                         <div class="pipeline-step">
                             <span class="step-num">01</span>
-                            <span class="step-text">農田影像輸入</span>
+                            <span class="step-text">影像前處理</span>
                         </div>
                         <div class="pipeline-arrow">→</div>
                         <div class="pipeline-step">
                             <span class="step-num">02</span>
-                            <span class="step-text">SAM 語義分割</span>
+                            <span class="step-text">CLIP 異常篩除</span>
                         </div>
                         <div class="pipeline-arrow">→</div>
                         <div class="pipeline-step">
                             <span class="step-num">03</span>
-                            <span class="step-text">OOD 異常移除</span>
+                            <span class="step-text">Lang-SAM 田區分割</span>
                         </div>
                         <div class="pipeline-arrow">→</div>
                         <div class="pipeline-step">
                             <span class="step-num">04</span>
-                            <span class="step-text">作物精準辨識</span>
+                            <span class="step-text">ViT 作物辨識</span>
                         </div>
                     </div>
                 </article>
@@ -478,7 +483,7 @@
                 <!-- Paper 2: Timber Identification -->
                 <article class="research-card" id="paper-2">
                     <div class="project-ember"></div>
-                    <div class="research-badge">🌳 ACPA 11 · Oct 2025</div>
+                    <div class="research-badge">🌳 ACPA 2025 · Conference Paper</div>
                     <div class="research-header">
                         <div class="research-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -489,7 +494,7 @@
                         </div>
                     </div>
                     <h3 class="research-title">Lauraceae Timber Identification Using Vision Transformer</h3>
-                    <p class="research-authors"><strong>Chieh-Hsiu Teng</strong>, Chin-Mei Lee, Yan-Fu Kuo · 11th Asian Conference on Precision Agriculture</p>
+                    <p class="research-authors"><strong>Chieh-Hsiu Teng</strong>, Chin-Mei Lee, Yan-Fu Kuo · ACPA 2025 (Asian-Australasian Conference on Precision Agriculture)</p>
                     <p class="research-desc">發表於 ACPA 11 (AI and Machine Learning in Agriculture 議程)。運用 Vision Transformer 架構對樟科（Lauraceae）木材進行自動化辨識分類，涵蓋牛樟（Cinnamomum kanehirae）等台灣珍貴保育樹種。結合林業試驗所合作計畫，為第一線林務人員提供 AI 木材辨識工具，打擊非法伐木、促進森林保育。辨識準確率達 95% 以上。</p>
                     <div class="research-meta">
                         <span class="research-tag highlight">Vision Transformer</span>
@@ -515,7 +520,189 @@
         </div>
     </section>
 
-    <!-- ========== REALM 5: 兜率宮 - Experience ========== -->
+    <!-- ========== REALM 5: 煉丹爐 - Projects ========== -->
+    <section id="projects" class="realm realm-research realm-projects">
+        <div class="realm-bg realm-bg-dark"></div>
+        <div class="realm-overlay"></div>
+        <div class="realm-vignette"></div>
+
+        <div class="realm-content research-content">
+            <div class="section-header scroll-reveal">
+                <span class="section-chapter">第五章 · 專案作品</span>
+                <h2 class="section-title">法寶煉成</h2>
+            </div>
+
+            <h3 class="project-group-title scroll-reveal"><span class="group-emoji">🔬</span>研究與研究工具<span class="group-count">4</span></h3>
+            <div class="project-grid scroll-reveal">
+                <article class="research-card project-card-sm">
+                    <div class="project-ember"></div>
+                    <div class="project-head">
+                        <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M12 20v-8"/><path d="M12 12C12 8 9 5 4 5c0 4 3 7 8 7z"/><path d="M12 10c0-3 2.5-6 8-6 0 4-3 6-8 6z"/></svg></div>
+                        <span class="research-badge">碩士論文</span>
+                    </div>
+                    <h3 class="research-title">thesis_crop<span class="project-sub">街景作物辨識系統</span></h3>
+                    <p class="research-desc">從大量街景照片自動判斷每塊農地種了什麼。流程：照片前處理 → 過濾拍不到農田的照片（凍結 DINOv2 加小型分割頭）→ ViT 作物分類 → 照片位置校正 → 彙整成每塊農地的辨識結果。</p>
+                    <div class="research-meta">
+                        <span class="research-tag highlight">DINOv2</span>
+                        <span class="research-tag">ViT</span>
+                        <span class="research-tag">Segmentation</span>
+                        <span class="research-tag">PyTorch</span>
+                    </div>
+                    <div class="project-foot"><span class="project-status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>私有專案</span></div>
+                </article>
+
+                <article class="research-card project-card-sm">
+                    <div class="project-ember"></div>
+                    <div class="project-head">
+                        <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                        <span class="research-badge">研究工具</span>
+                    </div>
+                    <h3 class="research-title">CropSight<span class="project-sub">作物影像推論加速</span></h3>
+                    <p class="research-desc">把作物影像辨識的推論流程逐版改快，每一版都留下獨立的 commit 與標籤，方便比較每一步改動帶來的效果。</p>
+                    <div class="research-meta">
+                        <span class="research-tag highlight">Inference Pipeline</span>
+                        <span class="research-tag">Python</span>
+                    </div>
+                    <div class="project-foot"><span class="project-status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>私有專案</span></div>
+                </article>
+
+                <article class="research-card project-card-sm">
+                    <div class="project-ember"></div>
+                    <div class="project-head">
+                        <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7M9 11h5"/></svg></div>
+                        <span class="research-badge">Web App</span>
+                    </div>
+                    <h3 class="research-title">Research Hub<span class="project-sub">研究整理助手</span></h3>
+                    <p class="research-desc">放進一個研究資料夾，自動分類檔案、寫摘要，並從 git 紀錄整理出給教授的進度報告；報告裡的每個數字都會逐句回頭比對原始檔案，找不到出處就標出來。</p>
+                    <div class="research-meta">
+                        <span class="research-tag highlight">LLM</span>
+                        <span class="research-tag">FastAPI</span>
+                        <span class="research-tag">React</span>
+                    </div>
+                    <div class="project-foot"><span class="project-status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>私有專案</span></div>
+                </article>
+
+                <article class="research-card project-card-sm">
+                    <div class="project-ember"></div>
+                    <div class="project-head">
+                        <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M14.3 8l5.7 9.9M9.7 8h11.5M7.4 12l5.7-9.9M9.7 16L4 6.1M14.3 16H2.8M16.6 12l-5.7 9.9"/></svg></div>
+                        <span class="research-badge">課程專題</span>
+                    </div>
+                    <h3 class="research-title">n2v-denoising<span class="project-sub">自監督影像去噪</span></h3>
+                    <p class="research-desc">用 Noise2Void 在沒有乾淨影像當答案的情況下，替生醫與光學影像去除雜訊。</p>
+                    <div class="research-meta">
+                        <span class="research-tag highlight">Self-supervised</span>
+                        <span class="research-tag">Denoising</span>
+                        <span class="research-tag">Jupyter</span>
+                    </div>
+                    <div class="project-foot"><a href="https://github.com/toolmenj/n2v-denoising" target="_blank" rel="noopener" class="research-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.5 3.3 6.6 6.4 7A3.4 3.4 0 0 0 9 18.1V22"/></svg>查看 GitHub</a></div>
+                </article>
+            </div>
+
+            <h3 class="project-group-title scroll-reveal"><span class="group-emoji">⚔️</span>比賽與課程<span class="group-count">2</span></h3>
+            <div class="project-grid scroll-reveal">
+                <article class="research-card project-card-sm">
+                    <div class="project-ember"></div>
+                    <div class="project-head">
+                        <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+                        <span class="research-badge">2026 玉山 AI CUP</span>
+                    </div>
+                    <h3 class="research-title">ESUN Agent<span class="project-sub">AI 基金經理人</span></h3>
+                    <p class="research-desc">參加「Agent 基金經理人」賽：由 Agent 每天自動產出 ETF 投資計畫，送出前先用規則檢查器擋掉不合賽規的內容，並以回測驗證策略。</p>
+                    <div class="research-meta">
+                        <span class="research-tag highlight">AI Agent</span>
+                        <span class="research-tag">Quant</span>
+                        <span class="research-tag">Backtesting</span>
+                    </div>
+                    <div class="project-foot"><span class="project-status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>私有專案</span></div>
+                </article>
+
+                <article class="research-card project-card-sm">
+                    <div class="project-ember"></div>
+                    <div class="project-head">
+                        <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="8" height="10" rx="2"/><rect x="14" y="7" width="8" height="10" rx="2"/><path d="M10 12h4"/></svg></div>
+                        <span class="research-badge">區塊鏈導論</span>
+                    </div>
+                    <h3 class="research-title">MEV × 最後通牒賽局<span class="project-sub">鏈上分潤的賽局分析</span></h3>
+                    <p class="research-desc">四人小組專題：把區塊鏈上 MEV 的分潤過程看成多人競爭的最後通牒賽局，推導均衡下的分配比例，並用公開的 MEV-Boost 出價資料驗證。</p>
+                    <div class="research-meta">
+                        <span class="research-tag highlight">Game Theory</span>
+                        <span class="research-tag">Ethereum</span>
+                        <span class="research-tag">Data Analysis</span>
+                    </div>
+                    <div class="project-foot"><a href="https://github.com/toolmenj/MEV-Sharing-Analysis-from-the-Perspective-of-the-Ultimatum-Game" target="_blank" rel="noopener" class="research-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.5 3.3 6.6 6.4 7A3.4 3.4 0 0 0 9 18.1V22"/></svg>查看 GitHub</a></div>
+                </article>
+            </div>
+
+            <h3 class="project-group-title scroll-reveal"><span class="group-emoji">🏮</span>個人作品<span class="group-count">4</span></h3>
+            <div class="project-grid scroll-reveal">
+                <article class="research-card project-card-sm">
+                    <div class="project-ember"></div>
+                    <div class="project-head">
+                        <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                        <span class="research-badge">Web App</span>
+                    </div>
+                    <h3 class="research-title">慢信<span class="project-sub">從前慢，如今也慢</span></h3>
+                    <p class="research-desc">模擬寫信、寄信、收信的網頁 App：寫錯不能刪只能劃掉、要自己走到郵局、信件依班次與天氣慢慢送達，收件人親手拆信。</p>
+                    <div class="research-meta">
+                        <span class="research-tag highlight">React</span>
+                        <span class="research-tag">TypeScript</span>
+                        <span class="research-tag">Node.js</span>
+                    </div>
+                    <div class="project-foot"><a href="https://github.com/toolmenj/manxin" target="_blank" rel="noopener" class="research-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.5 3.3 6.6 6.4 7A3.4 3.4 0 0 0 9 18.1V22"/></svg>查看 GitHub</a></div>
+                </article>
+
+                <article class="research-card project-card-sm">
+                    <div class="project-ember"></div>
+                    <div class="project-head">
+                        <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+                        <span class="research-badge">Mobile App</span>
+                    </div>
+                    <h3 class="research-title">Eudaimo<span class="project-sub">日行一善</span></h3>
+                    <p class="research-desc">每天記錄一件善行、分享到公開牆，累積的善值會養大一隻用程式畫出來的小精靈寵物。</p>
+                    <div class="research-meta">
+                        <span class="research-tag highlight">React Native</span>
+                        <span class="research-tag">Expo</span>
+                        <span class="research-tag">TypeScript</span>
+                    </div>
+                    <div class="project-foot"><span class="project-status"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>私有專案</span></div>
+                </article>
+
+                <article class="research-card project-card-sm">
+                    <div class="project-ember"></div>
+                    <div class="project-head">
+                        <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+                        <span class="research-badge">3D Web</span>
+                    </div>
+                    <h3 class="research-title">minion-choir<span class="project-sub">3D 角色合唱團</span></h3>
+                    <p class="research-desc">一排 3D 角色站在舞台上，點誰誰就接著唱，也能整團輪唱到大合唱；純前端，用 three.js 畫面、Web Audio 發聲。</p>
+                    <div class="research-meta">
+                        <span class="research-tag highlight">three.js</span>
+                        <span class="research-tag">Web Audio</span>
+                    </div>
+                    <div class="project-foot"><a href="https://github.com/toolmenj/minion-choir" target="_blank" rel="noopener" class="research-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.5 3.3 6.6 6.4 7A3.4 3.4 0 0 0 9 18.1V22"/></svg>查看 GitHub</a></div>
+                </article>
+
+                <article class="research-card project-card-sm">
+                    <div class="project-ember"></div>
+                    <div class="project-head">
+                        <div class="project-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M6 12h4M8 10v4"/><circle cx="15.5" cy="11" r="1"/><circle cx="18" cy="13" r="1"/></svg></div>
+                        <span class="research-badge">瀏覽器遊戲</span>
+                    </div>
+                    <h3 class="research-title">combo-fighter<span class="project-sub">平台對戰遊戲</span></h3>
+                    <p class="research-desc">橫向卷軸的平台對戰遊戲，角色動作來自真人動作捕捉資料，即時轉接到遊戲角色的骨架上，招式判定用拳腳的實際位置計算。</p>
+                    <div class="research-meta">
+                        <span class="research-tag highlight">three.js</span>
+                        <span class="research-tag">Motion Capture</span>
+                        <span class="research-tag">IK</span>
+                    </div>
+                    <div class="project-foot"><span class="project-status"><span class="status-dot"></span>開發中</span></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== REALM 6: 兜率宮 - Experience ========== -->
     <section id="experience" class="realm realm-experience">
         <div class="realm-bg" style="background-image: url('assets/garden-bg.png')"></div>
         <div class="realm-overlay"></div>
@@ -523,12 +710,33 @@
 
         <div class="realm-content experience-content">
             <div class="section-header scroll-reveal">
-                <span class="section-chapter">第五章</span>
-                <h2 class="section-title">課程以及研究經驗/h2>
+                <span class="section-chapter">第六章</span>
+                <h2 class="section-title">課程以及研究經驗</h2>
             </div>
 
             <div class="timeline scroll-reveal">
-                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2026.7 — 至今</div>
+                    <div class="timeline-card">
+                        <div class="card-glow"></div>
+                        <h3>🎓 M.S. in Biomechatronics Engineering</h3>
+                        <p class="timeline-org">National Taiwan University (NTU) · 國立臺灣大學</p>
+                        <p class="timeline-desc">碩士研究題目為街景影像作物辨識：從大量街景照片中自動判斷每塊農地種了什麼作物，並校正照片與農地的對應位置。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025.7 — 至今</div>
+                    <div class="timeline-card">
+                        <div class="card-glow"></div>
+                        <h3>🌾 Research Assistant</h3>
+                        <p class="timeline-org">Ministry of Agriculture · 農業部</p>
+                        <p class="timeline-desc">計畫：Foundation Model-Based Anomalies Removal Approach Toward Crop Identification。建立零樣本處理流程（前處理 → CLIP → Lang-SAM → ViT），讓作物辨識能直接用在真實田間影像。</p>
+                    </div>
+                </div>
+
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2024.7 — 至今</div>
@@ -536,43 +744,40 @@
                         <div class="card-glow"></div>
                         <h3>🔬 Research Assistant</h3>
                         <p class="timeline-org">Machine Learning & Computer Vision Lab · NTU</p>
-                        <p class="timeline-desc">參與 Foundation Model 在農業影像辨識的研究，包含作物辨識中的異常移除方法，以及遙感影像的深度學習應用。</p>
+                        <p class="timeline-desc">持續研究進階機器學習演算法在農林影像上的應用。</p>
                     </div>
                 </div>
 
-                <!-- Experience 2 -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2024.7 — 2025.7</div>
                     <div class="timeline-card">
                         <div class="card-glow"></div>
-                        <h3>🌲 AI Research Intern</h3>
-                        <p class="timeline-org">Taiwan Forestry Bureau · 林業試驗所</p>
-                        <p class="timeline-desc">運用 Vision Transformer 開發樟科木材自動辨識系統，協助森林保育與木材貿易管理。</p>
+                        <h3>🌲 Research Assistant</h3>
+                        <p class="timeline-org">Taiwan Forestry Research Institute · 林業試驗所</p>
+                        <p class="timeline-desc">計畫：Lauraceae Timber Identification Using Vision Transformer。建立含資料前處理與資料增強的端到端影像流程，訓練 Vision Transformer 辨識樟科木材樹種。</p>
                     </div>
                 </div>
 
-                <!-- Experience 3 -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">2025.6 — 2025.9</div>
                     <div class="timeline-card">
                         <div class="card-glow"></div>
-                        <h3>📊 Data Science TA</h3>
+                        <h3>📊 Teaching Assistant</h3>
                         <p class="timeline-org">NTU BiME · 生物機電工程學系</p>
-                        <p class="timeline-desc">擔任資料科學課程教學助理，指導學生進行資料分析、機器學習實作與專案開發。</p>
+                        <p class="timeline-desc">擔任「資料科學」課程助教，以及臺大暑期課程「生物健康管理之數位科技」（Digital Technology in Biological Health Management）助教。</p>
                     </div>
                 </div>
 
-                <!-- Education -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022 — 至今</div>
+                    <div class="timeline-date">2022.9 — 2026.7</div>
                     <div class="timeline-card">
                         <div class="card-glow"></div>
                         <h3>🎓 B.S. in Biomechatronics Engineering</h3>
                         <p class="timeline-org">National Taiwan University (NTU) · 國立臺灣大學</p>
-                        <p class="timeline-desc">主修生物機電工程，專注於機器學習與電腦視覺。課程成績：Data Science (A+)、Microcontroller Programming (A)、Electronics (A-)。</p>
+                        <p class="timeline-desc">相關課程：Data Science (A+)、Microcontroller Programming (A)、Electronics (A-)、Technologies and Applications of Bio-Opto-Electro-Mechanical Systems (A)。</p>
                     </div>
                 </div>
             </div>
@@ -587,7 +792,7 @@
 
         <div class="realm-content contact-content">
             <div class="section-header scroll-reveal">
-                <span class="section-chapter">第六章</span>
+                <span class="section-chapter">第七章</span>
                 <h2 class="section-title">聯繫方式</h2>
             </div>
 

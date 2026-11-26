@@ -1248,6 +1248,177 @@ a {
     }
 }
 
+/* Projects realm */
+.project-group-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-gold-light);
+    letter-spacing: 0.12em;
+    margin: var(--space-2xl) 0 var(--space-md);
+}
+
+.project-group-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(212, 168, 67, 0.35), transparent);
+}
+
+.section-header + .project-group-title {
+    margin-top: 0;
+}
+
+.group-emoji {
+    font-size: 0.95em;
+}
+
+.group-count {
+    order: 3;
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: var(--color-text-dim);
+    border: 1px solid rgba(212, 168, 67, 0.2);
+    border-radius: 20px;
+    padding: 0.1em 0.65em;
+}
+
+.project-group-title::after { order: 4; }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-md);
+}
+
+.project-card-sm {
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-sm::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(212, 168, 67, 0.5), transparent);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.project-card-sm:hover::before {
+    opacity: 1;
+}
+
+.project-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-md);
+}
+
+.project-head .research-badge {
+    margin-bottom: 0;
+}
+
+.project-icon {
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    border-radius: 10px;
+    color: var(--color-gold);
+    background: rgba(212, 168, 67, 0.07);
+    border: 1px solid rgba(212, 168, 67, 0.15);
+}
+
+.project-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.project-card-sm .research-title {
+    font-size: 1.08rem;
+    margin-bottom: 0.6rem;
+}
+
+.project-sub {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--color-text-dim);
+    letter-spacing: 0.04em;
+    margin-top: 0.15rem;
+}
+
+.project-card-sm .research-desc {
+    font-size: 0.86rem;
+    flex: 1;
+}
+
+.project-foot {
+    display: flex;
+    align-items: center;
+    margin-top: var(--space-sm);
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(212, 168, 67, 0.1);
+    min-height: 3.3rem;
+}
+
+.project-foot .research-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.project-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45em;
+    font-size: 0.78rem;
+    color: var(--color-text-dim);
+    letter-spacing: 0.04em;
+}
+
+.project-status svg {
+    width: 13px;
+    height: 13px;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-jade);
+    box-shadow: 0 0 8px var(--color-jade);
+    animation: statusPulse 2s ease-in-out infinite;
+}
+
+@keyframes statusPulse {
+    50% { opacity: 0.35; }
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .realm-projects .realm-content,
+    .realm-research .realm-content {
+        padding-right: 2.75rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .status-dot { animation: none; }
+}
+
 /* Stagger research cards */
 .scroll-reveal.revealed .research-card {
     opacity: 0;

@@ -195,7 +195,9 @@ function initNavigation() {
             }
         });
     }, {
-        threshold: 0.4
+        // Active = the section crossing the middle of the viewport (works for sections taller than the screen)
+        rootMargin: '-50% 0px -50% 0px',
+        threshold: 0
     });
 
     sections.forEach(section => observer.observe(section));
